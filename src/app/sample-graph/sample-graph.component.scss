@@ -1,3 +1,11 @@
-.example-spacer {
-    flex: 1 1 auto;
+.sample-graph {
+    color: black;
+    background-color: white;
+    margin: 10px 10px;
+    width: 800px;
+    height: 600px;
+
+    &-subtitle {
+        color: black;
+    }
 }

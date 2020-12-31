@@ -10,7 +10,7 @@ import { MaterialModule } from '../shared/material.module';
   imports: [
     CommonModule,
     SampleGraphRoutingModule,
-    MaterialModule,
+    MaterialModule
   ]
 })
 export class SampleGraphModule { }
