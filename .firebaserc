@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "sample-angular-3410f"
+  },
+  "targets": {
+    "sample-angular-3410f": {
+      "hosting": {
+        "sample-angular": [
+          "sample-angular-3410f"
+        ]
+      }
+    }
+  }
+}

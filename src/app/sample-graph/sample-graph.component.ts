@@ -12,10 +12,10 @@ export class SampleGraphComponent implements OnInit, AfterViewInit {
     private _elementRef: ElementRef,
   ) { }
 
-  @ViewChild('canvas') ref: ElementRef;
+  @ViewChild('canvas') ref!: ElementRef;
 
-  context: CanvasRenderingContext2D;
-  chart: Chart;
+  context!: CanvasRenderingContext2D;
+  chart!: Chart;
 
   data = {
     labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
