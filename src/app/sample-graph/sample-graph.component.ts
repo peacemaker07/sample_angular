@@ -2,6 +2,8 @@ import { Component, OnInit, AfterViewInit, ViewChild, ElementRef, Input } from '
 
 import { Chart, ChartData, ChartOptions } from 'chart.js';
 
+import { FitbitService } from '../fitbit/fitbit.service';
+
 @Component({
   templateUrl: './sample-graph.component.html',
   styleUrls: ['./sample-graph.component.scss']
@@ -10,6 +12,7 @@ export class SampleGraphComponent implements OnInit, AfterViewInit {
 
   constructor(
     private _elementRef: ElementRef,
+    private _fitbit: FitbitService,
   ) { }
 
   @ViewChild('canvas') ref!: ElementRef;
@@ -53,6 +56,16 @@ export class SampleGraphComponent implements OnInit, AfterViewInit {
   };
 
   ngOnInit(): void {
+
+    // 心拍数
+    const days = 1;
+    this._fitbit.requestGetHeartRagebyDays$(days)
+      .subscribe((res) => {
+        console.log(res)
+      },
+      (error) => {
+        console.log('心拍数の取得に失敗しました')
+      });
 
   }
 
