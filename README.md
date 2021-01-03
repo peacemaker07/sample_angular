@@ -45,3 +45,21 @@ $ firebase init
 ```
 $ firebase deploy
 ```
+
+## Reference
+
+- Angular
+  - [Angular](https://angular.io/docs)
+  - [Angular Material](https://material.angular.io/)
+  - [Angularのngrxを使って状態管理を行う（理論編）](https://qiita.com/Yamamoto0525/items/03155acbce1ffd1d037e)
+- chart.js
+  - [chart.js を angular の component の中で使う](https://qiita.com/chase0213/items/4e3f53167744b4fa9897)
+- Firebase
+  - [Firebaseの環境構築](https://qiita.com/Yamamoto0525/items/fb23707831ff6d181544)
+- Fitbit
+  - [Web API Reference](https://dev.fitbit.com/build/reference/web-api/)
+  - [Fitbit/sdk-oauth](https://github.com/Fitbit/sdk-oauth)
+  - [FitbitのAPIを手っ取り早く試してみる方法](https://qiita.com/makopo/items/32f41128c2e055cec68f)
+- Auth0
+  - [Docs > Quickstarts > Single-Page AppAngular](https://auth0.com/docs/quickstart/spa/angular)
+
